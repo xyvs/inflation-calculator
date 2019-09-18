@@ -1,0 +1,56 @@
+// app global css in Sass form
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700|Source+Sans+Pro:600&display=swap');
+
+
+/* Global Styles */
+
+body
+	font-family: 'Poppins', sans-serif
+	font-size: 13px
+	font-weight: 500
+
+a
+	text-decoration: none
+
+
+/* Text colors */
+
+.text
+
+	&-green
+		color: $green
+
+	&-blue-0
+		color: $blue-0
+
+	&-blue-1
+		color: $blue-1
+
+	&-gray-0
+		color: $gray-0
+
+	&-gray-1
+		color: $gray-1
+
+	&-gray-2
+		color: $gray-2
+
+
+/* Custom styles */
+
+.main-card
+	width: 720px
+	border-radius: 0
+	border: 1px solid $gray-1
+	box-shadow: none
+
+	@media screen and (max-width: 740px)
+		width: 90%
+
+	&-header
+		background-color: $blue-0
+
+
+.save-info
+	font-family: 'Source Sans Pro', sans-serif
