@@ -45,7 +45,7 @@
         </div>
         <div v-else>
           <div v-if="newValues">
-            <p class="q-py-md text-gray-1">SELECCIONANDO NUEVOS VALORES</p>
+            <p class="q-py-md text-gray-1">SELECCIONANDO NUEVOS VALORES...</p>
           </div>
           <div v-else>
             <p class="q-py-md text-gray-1">NO SE ENCONTRARÓN RESULTADOS</p>
@@ -113,6 +113,8 @@ export default {
         })
         .catch(function (error) {
           console.log(error)
+        }).finally(function () {
+          vm.newValues = false
         })
     },
     emptyData () {
